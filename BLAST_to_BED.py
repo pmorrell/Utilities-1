@@ -5,7 +5,6 @@ import sys
 if sys.version_info.major is not 3:
     sys.exit("Please use Python 3 for this script")
 
-
 import os
 import re
 import argparse
@@ -411,10 +410,6 @@ def main():
     if args['fasta'] and not args['keep_xml']:
         print("Removing intermediate files", file=sys.stderr)
         os.remove(blast_xml) # Remove
-        
-
 
 if __name__ == '__main__':
     main()
-
-
